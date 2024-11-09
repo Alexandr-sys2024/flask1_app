@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Блог</title>
 </head>
 <body>
-
+    <header>
+        <nav>
+            <a href="{{ url_for('index') }}">Главная</a>
+            <a href="{{ url_for('blog') }}">Блог</a>
+            <a href="{{ url_for('contacts') }}">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Страница блога</h1>
+        <p>Здесь вы найдете интересные статьи и обновления.</p>
+    </main>
 </body>
 </html>
